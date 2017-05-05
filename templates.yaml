@@ -1,0 +1,14 @@
+prompt_welcome: Welcome to MooChat! You can send a gif to a contact, or add someone to your contacts.
+
+prompt_for_name: Who would you like to add?
+
+prompt_for_number: What is {{ name }} phone number?
+
+add_contact_confirm: Great, just added {{ name }}, what do you want to do next?
+
+
+send_to_contact_confirm: Moo moo!
+
+send_to_contact_missing: Sorry, {{ name }} is not in your contact book
+
+send_to_contact_error: Sorry, something broke
