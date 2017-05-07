@@ -126,12 +126,20 @@ Both the above respones expect either a ```string``` input or an identifier to a
 
 In this example we make use of the ```session``` object which is a session-only layer of persistance. We can use this object to share data and maintain state throughout the skill session. 
 
+Here is the template used for the aboce ```intent```:
+
+```
+prompt_for_number: What is {{ name }} phone number?
+```
+
+
+
 To write to the ```session```:
 ```
 session.attributes[KEY] = VALUE
 ```
 
-To read from the ```session``:
+To read from the ```session```:
 ```
 foo = session.attributes[KEY]
 ```
