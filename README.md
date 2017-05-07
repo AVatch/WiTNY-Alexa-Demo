@@ -9,6 +9,8 @@
 - [flask-ask](https://whydoesitsuck.com/top-five-most-annoying-programming-languages/)
 - [Amazon + flask-ask Intro](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development)
 - [ngrok](https://ngrok.com/)
+- [NodeJS Alexa Skillkit](https://github.com/alexa/alexa-skills-kit-sdk-for-nodejs)
+- [Example of Skill written in Node (work in prog. see various branches)](https://github.com/nbuhay/alexa-helloWorld) 
 
 ## Quick Overview of Building a Skill
 You can think of an Alexa Skill as an app for a smartphone, except the primary interface is speech/voice. While apps can provide a visually rich interface, they require the user's active attention (for the most part). On the other hand, Alexa skills tend to be hands free and quick bursts of information. 
