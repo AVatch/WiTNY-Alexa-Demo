@@ -3,15 +3,15 @@ import json
 from flask import Flask, render_template
 from flask_ask import Ask, statement, question, session
 
-from twilio.rest import Client
+# from twilio.rest import Client
 
 # this is gitignored, so add your credentials here
-from env import * 
+# from env import * 
 
 # Setup twilio info
-account_sid = TWILIO_ACCOUNT_SID
-auth_token = TWILIO_AUTH_TOKEN
-client = Client(account_sid, auth_token)
+# account_sid = TWILIO_ACCOUNT_SID
+# auth_token = TWILIO_AUTH_TOKEN
+# client = Client(account_sid, auth_token)
 
 
 app = Flask(__name__)
@@ -83,19 +83,18 @@ def send_to_contact(name, query):
             msg = render_template('send_to_contact_missing', name=name)
             return statement(msg)
 
-        message = client.messages.create(to='+1{number}'.format(number=str(number)),
-                                         from_=TWILIO_NUMBER,
-                                         body="Her look there's a {query}!!!".format(query=query))
+        # message = client.messages.create(to='+1{number}'.format(number=str(number)),
+        #                                  from_=TWILIO_NUMBER,
+        #                                  body="Her look there's a {query}!!!".format(query=query))
         
+        print("Enable twilio to send text");
+
         msg = render_template('send_to_contact_confirm')
 
         return statement(msg)
 
     except Exception as e:
-        
-        print "*"*50
-        print e
-        print "*"*50
+        print(e)
 
         msg = render_template('send_to_contact_error')
         return statement(msg)
