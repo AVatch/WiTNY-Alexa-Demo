@@ -1,42 +1,10 @@
 {
     "intents": [
         {
-            "intent": "AddContactInitIntent"
-        }, 
-        {
-            "intent": "AddContactNameIntent",
+            "intent": "SayHelloIntent",
             "slots": [{
                 "name": "name",
                 "type": "LIST_OF_NAMES"
-            }]
-        },
-        {
-            "intent": "AddContactNumberIntent",
-            "slots": [{
-                "name": "number",
-                "type": "AMAZON.NUMBER"
-            }]
-        },
-        
-        {
-            "intent": "AddToContactBookConfirmIntent",
-            "slots": [{
-                "name": "name",
-                "type": "LIST_OF_NAMES"
-            }, {
-                "name": "number",
-                "type": "AMAZON.NUMBER"
-            }]
-        },
-        
-        {
-            "intent": "SendToContactIntent",
-            "slots": [{
-                "name": "name",
-                "type": "LIST_OF_NAMES"
-            }, {
-                "name": "query",
-                "type": "AMAZON.Animal"
             }]
         }
     ]

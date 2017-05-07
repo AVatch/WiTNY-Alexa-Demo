@@ -1,9 +1,1 @@
-AddContactInitIntent add to contact
-
-AddContactNameIntent {name}
-
-AddContactNumberIntent Their number is {number}
-
-AddToContactBookConfirmIntent {name} {number}
-
-SendToContactIntent Send {name} {query}
+SayHelloIntent {name}
